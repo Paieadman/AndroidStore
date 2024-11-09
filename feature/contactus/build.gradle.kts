@@ -35,6 +35,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":uikit:compose"))
+    implementation(project(":uikit:resources"))
 
     // compose
     implementation(libs.androidx.activity.compose)

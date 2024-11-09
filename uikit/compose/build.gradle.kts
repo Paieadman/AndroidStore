@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "ru.bampernn.uikit.compose"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 23
@@ -41,6 +41,8 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.ui.tooling.preview.android)
+    implementation(libs.ui.tooling.preview.android)
     debugImplementation(libs.ui.tooling)
     implementation(libs.androidx.material3)
 

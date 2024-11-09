@@ -22,7 +22,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "androidstore"
 include(":app")
-include(":uikit-compose")
 include(":uikit:resources")
 include(":uikit:compose")
 include(":feature:contactus")

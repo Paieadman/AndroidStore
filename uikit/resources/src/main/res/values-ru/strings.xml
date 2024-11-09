@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_office">Главный офис</string>
+    <string name="phone">Телефон</string>
+    <string name="operating_mode">Режим работы</string>
+</resources>

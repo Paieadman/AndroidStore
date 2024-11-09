@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="main_office">Main office</string>
+    <string name="phone">Phone</string>
+    <string name="operating_mode">Operating mode</string>
+    <string name="email" translatable="false">e-mail</string>
+<!--    TODO translatable-->
+    <string name="main_office_value" translatable="false">606152, Россия, Нижегородская область, г. Дзержинск, ул. Лермонтова 20, литер 77 «а»</string>
+    <string name="t1" translatable="false">+7 (831) 324 9272</string>
+    <string name="t2" translatable="false">+7 (920) 000 5497</string>
+    <string name="t3" translatable="false">+7 (910) 130 2217</string>
+    <string name="t4" translatable="false">+7 (920) 002 5188</string>
+    <string name="t5" translatable="false">+7 (904) 060 9765</string>
+    <string name="contact_mail" translatable="false">bampernn@yandex.ru</string>
+    <string name="operating_mode_value" translatable="false">Пн. – Пт.: с 09:00 до 17:00</string>
+</resources>

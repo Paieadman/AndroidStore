@@ -15,18 +15,15 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import ru.bampernn.androidstore.navigation.Navigation
 import ru.bampernn.uikit.compose.elements.appbar.NTopAppBar
+import ru.bampernn.uikit.compose.elements.surface.NSurface
 import ru.bampernn.uikit.compose.theme.AndroidStoreTheme
 
 class MainActivity : ComponentActivity() {
@@ -46,9 +43,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Content(navController: NavHostController) {
-    Column {
-        NTopAppBar()
-        Navigation(navController = navController)
+    NSurface {
+        Column {
+            NTopAppBar()
+            Navigation(navController = navController)
+        }
     }
 }
 

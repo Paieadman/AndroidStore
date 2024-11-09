@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- brand -->
+    <color name="brand">#12b2e7</color>
+
+    <!-- surface -->
+    <color name="surface_primary">#FFFFFF</color>
+
+    <!-- container -->
+<!--    <color name="container_primary">#F5F5DC</color>-->
+    <color name="container_primary">#F5FFFA</color>
+    <color name="container_secondary">#FFFAF0</color>
+
+    <!-- text -->
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_tertiary">#999999</color>
+    <color name="text_brand">#12b2e7</color>
+</resources>

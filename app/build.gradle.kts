@@ -43,6 +43,7 @@ android {
 
 dependencies {
     implementation(project(":uikit:compose"))
+    implementation(project(":uikit:resources"))
     implementation(project(":feature:contactus"))
     implementation(project(":feature:store"))
 
