@@ -8,18 +8,10 @@
  * ------------------------------------------------------------
  */
 
-package ru.bampernn.uikit.compose.elements.surface
+package ru.bampernn.androidstore
 
-import androidx.compose.material3.Surface
-import androidx.compose.runtime.Composable
-import ru.bampernn.uikit.compose.theme.Palette
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-@Composable
-fun NSurface(
-    content: @Composable () -> Unit,
-) {
-    Surface(
-        color = Palette.surface.primary,
-        content = content,
-    )
-}
+@HiltAndroidApp
+class AndroidStoreApplication : Application()

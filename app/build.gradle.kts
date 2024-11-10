@@ -1,7 +1,7 @@
 /*
  * ------------------------------------------------------------
  * "THE BEERWARE LICENSE" (Revision 42):
- * <author> wrote this code. As long as you retain this
+ * Nikolay Reshetnikov wrote this code. As long as you retain this
  * notice, you can do whatever you want with this stuff. If we
  * meet someday, and you think this stuff is worth it, you can
  * buy me a beer in return.
@@ -13,7 +13,10 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
     id("plugin-collection")
+
 }
 
 android {
@@ -47,6 +50,15 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    tasks.withType(JavaCompile::class.java) {
+        options.compilerArgs.addAll(
+            listOf(
+                "-Xlint:unchecked",
+                "-Xlint:deprecation",
+            )
+        )
+    }
+
     buildFeatures {
         compose = true
     }
@@ -74,6 +86,10 @@ dependencies {
     implementation(libs.navigationCompose)
     implementation(libs.kotlinx.serialization.json)
 
+    // hilt
+    implementation(libs.bundles.hilt)
+    implementation(libs.androidx.hilt.navigation.compose)
+    ksp(libs.hilt.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

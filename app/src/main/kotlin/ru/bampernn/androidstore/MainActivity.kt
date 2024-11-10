@@ -21,11 +21,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import dagger.hilt.android.AndroidEntryPoint
 import ru.bampernn.androidstore.navigation.Navigation
 import ru.bampernn.uikit.compose.elements.appbar.NTopAppBar
 import ru.bampernn.uikit.compose.elements.surface.NSurface
 import ru.bampernn.uikit.compose.theme.AndroidStoreTheme
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +35,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             AndroidStoreTheme {
-                Content(
+                ApplicationContent(
                     navController = navController,
                 )
             }
@@ -42,7 +44,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Content(navController: NavHostController) {
+fun ApplicationContent(navController: NavHostController) {
     NSurface {
         Column {
             NTopAppBar()

@@ -8,18 +8,7 @@
  * ------------------------------------------------------------
  */
 
-package ru.bampernn.uikit.compose.elements.surface
+package ru.bampernn.contactus
 
-import androidx.compose.material3.Surface
-import androidx.compose.runtime.Composable
-import ru.bampernn.uikit.compose.theme.Palette
-
-@Composable
-fun NSurface(
-    content: @Composable () -> Unit,
-) {
-    Surface(
-        color = Palette.surface.primary,
-        content = content,
-    )
-}
+// data class ContactUsScreenUiState {
+// }

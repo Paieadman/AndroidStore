@@ -8,18 +8,10 @@
  * ------------------------------------------------------------
  */
 
-package ru.bampernn.uikit.compose.elements.surface
+package ru.bampernn.common.ui
 
-import androidx.compose.material3.Surface
-import androidx.compose.runtime.Composable
-import ru.bampernn.uikit.compose.theme.Palette
-
-@Composable
-fun NSurface(
-    content: @Composable () -> Unit,
-) {
-    Surface(
-        color = Palette.surface.primary,
-        content = content,
-    )
+sealed class UiState {
+    data object Loading : UiState()
+    data object Error : UiState()
+    data object Success : UiState()
 }

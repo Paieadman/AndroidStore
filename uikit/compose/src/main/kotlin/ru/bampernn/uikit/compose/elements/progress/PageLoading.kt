@@ -8,18 +8,12 @@
  * ------------------------------------------------------------
  */
 
-package ru.bampernn.uikit.compose.elements.surface
+package ru.bampernn.uikit.compose.elements.progress
 
-import androidx.compose.material3.Surface
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
-import ru.bampernn.uikit.compose.theme.Palette
 
 @Composable
-fun NSurface(
-    content: @Composable () -> Unit,
-) {
-    Surface(
-        color = Palette.surface.primary,
-        content = content,
-    )
+fun PageLoading() {
+    CircularProgressIndicator()
 }
