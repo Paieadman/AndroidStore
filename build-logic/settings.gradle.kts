@@ -9,7 +9,6 @@
  */
 
 pluginManagement {
-    includeBuild("build-logic")
     repositories {
         google()
         mavenCentral()
@@ -25,12 +24,16 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+    versionCatalogs {
+        create("libs") {
+            from(
+                files(
+                    "../gradle/libs.versions.toml"
+                )
+            )
+        }
+    }
 }
 
-rootProject.name = "androidstore"
-
-include(":app")
-include(":uikit:resources")
-include(":uikit:compose")
-include(":feature:contactus")
-include(":feature:store")
+rootProject.name = "convention"
+include(":convention")
