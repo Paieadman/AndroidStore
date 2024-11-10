@@ -1,7 +1,7 @@
 /*
  * ------------------------------------------------------------
  * "THE BEERWARE LICENSE" (Revision 42):
- * Nikolay Reshetnikov wrote this code. As long as you retain this 
+ * Nikolay Reshetnikov wrote this code. As long as you retain this
  * notice, you can do whatever you want with this stuff. If we
  * meet someday, and you think this stuff is worth it, you can
  * buy me a beer in return.
@@ -57,7 +57,6 @@ fun TopAppBarContent(
         Text(text = text)
         Spacer(modifier = Modifier.weight(1f))
     }
-
 }
 
 @Composable
@@ -72,7 +71,7 @@ fun NavigationIcon() {
 
 @Preview(showBackground = true)
 @Composable
-fun NavigationIconPreview() {
+internal fun NavigationIconPreview() {
     AndroidStoreTheme {
         NavigationIcon()
     }
@@ -80,7 +79,7 @@ fun NavigationIconPreview() {
 
 @Preview(showBackground = true)
 @Composable
-fun NTopAppBarPreview() {
+internal fun NTopAppBarPreview() {
     AndroidStoreTheme {
         NTopAppBar(
             text = "Store"

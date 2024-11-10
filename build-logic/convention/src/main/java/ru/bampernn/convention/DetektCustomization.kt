@@ -16,7 +16,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.configure
-import ru.bampernn.convention.utils.getLibrary
+import ru.bampernn.convention.utils.library
 import ru.bampernn.convention.utils.pluginId
 import ru.bampernn.convention.utils.toArtifact
 
@@ -29,11 +29,11 @@ class DetektCustomization: Plugin<Project> {
             dependencies {
                 add(
                     "detektPlugins",
-                    getLibrary("detekt-compose").toArtifact()
+                    library("detekt-compose").toArtifact()
                 )
                 add(
                     "detektPlugins",
-                    getLibrary("detekt-formatting").toArtifact()
+                    library("detekt-formatting").toArtifact()
                 )
             }
             extensions.configure<DetektExtension> {

@@ -13,7 +13,7 @@ package ru.bampernn.convention.utils
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension
 
-fun Project.getLibrary(
+fun Project.library(
     name: String,
     catalogName: String = "libs"
 ): Triple<String, String, String> = extensions

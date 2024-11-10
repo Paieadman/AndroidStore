@@ -1,6 +1,6 @@
 [versions]
 agp = "8.7.2"
-kotlin = "2.0.0"
+kotlin = "2.0.21"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -17,7 +17,9 @@ androidxHiltNavigationCompose = "1.2.0"
 hilt = "2.52"
 kotlinxCoroutines = "1.9.0"
 kotlinxSerializationJson = "1.6.3"
-ksp = "2.0.20-1.0.25"
+#ksp = "2.0.20-1.0.25"
+#ksp = "1.9.24-1.0.20"
+ksp = "2.0.21-1.0.25"
 retrofit = "2.11.0"
 retrofitKotlinxSerializationJson = "1.0.0"
 room = "2.6.1"
@@ -71,6 +73,10 @@ detekt = [
     "detekt",
     "detekt-compose",
     "detekt-formatting",
+]
+hilt = [
+    "hilt-android",
+    "hilt-core",
 ]
 
 [plugins]

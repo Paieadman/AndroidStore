@@ -8,4 +8,3 @@ data class ContainerColors(
     val primary: Color = Color.Unspecified,
     val secondary: Color = Color.Unspecified,
 )
-

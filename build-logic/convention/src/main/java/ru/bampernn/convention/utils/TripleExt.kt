@@ -12,4 +12,3 @@ package ru.bampernn.convention.utils
 
 fun Triple<*, *, *>.toArtifact(): String =
     "$first:$second:$third"
-
